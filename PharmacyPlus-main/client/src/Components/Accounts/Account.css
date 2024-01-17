@@ -1,0 +1,154 @@
+/* Main container of account */
+.user-information {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 3vmax;
+}
+
+.paragraph-tag-pop-up {
+	font-size: 25px;
+	font-family: "Comic Neue", cursive;
+}
+
+/* Container to give proper width. and align. */
+.user-information-container {
+	width: 70%;
+	padding-top: 50px;
+	padding-left: 15vmax;
+	align-items: flex-start;
+}
+
+/* User info and its button. */
+.info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Width of user info in h4. */
+.info>div {
+	width: 100%;
+	word-wrap: break-word;
+}
+
+/* User name. */
+.info > div:first-child p {
+	color:rgb(122, 122, 122)
+}
+
+/* Changing color of Strong. */
+strong {
+	color:rgb(122, 122, 122)
+}
+
+/* Make edit button left. */
+.edit {
+	padding-top: 1vmax;
+}
+
+.info a {
+	float: right;
+	width: auto;
+}
+
+/* Edit button styling. */
+.info-edit-button {
+	border: none;
+	font-family: 'Comic Neue', cursive;
+	color: white;
+	background-color: rgb(180, 101, 45);
+	width: 30%;
+	text-align: center;
+	padding: 0.5vmax;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+
+/* Edit button hover. */
+.info-edit-button:hover {
+	color: white;
+	text-decoration: none;
+	background-color: rgb(144, 70, 0);
+}
+
+/* My order and change password button styling. */
+.other-button {
+	border: none;
+	font-family: 'Comic Neue', cursive;
+	color: white;
+	background-color: rgb(0, 17, 18);
+	width: 30%;
+	text-align: center;
+	padding: 1vmax;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: all 0.3s;
+	font-size: 1vmax;
+}
+
+.delete-account-button {
+	margin-top: 3vmax;
+	font-size: 1.1vmax;
+	width: 40%;
+}
+
+/* Centering my order and change password button. */
+.user-information-container > div:last-child {
+	text-align: center;
+	padding-right: 15vmax;
+	padding-top: 3vmax;
+	margin-top: 50px;
+}
+
+/* Myorder and Change password hover styling */
+.other-button:hover {
+	text-decoration: none;
+	background-color: rgb(57, 57, 57);
+	color: white;
+}
+
+@media all and (max-width: 1000px) {
+	/* My order and change password button padding and style. */
+	.other-button {
+		padding: 2vmax;
+		font-size: 1.5vmax;
+	}
+
+	/* Delete Button width */
+	.delete-account-button {
+		margin-top: 30px;
+		width: 80%;
+	}
+
+	/* User info and its button. */
+	.info {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/* Good padding from left of entire container. */
+	.user-information-container {
+		padding-left: 1vmax;
+	}
+
+	/* My order and change password button padding */
+	.user-information-container > div:last-child {
+		padding-right: 0vmax;
+		padding-top: 3vmax;
+	}
+
+	/* My order and change password button font-size. */
+	.other-button {
+		padding: 2vmax;
+		font-size: 2.4vmax;
+	}
+
+	.delete-account-button {
+		margin-top: 30px;
+		width: 80%;
+	}
+}

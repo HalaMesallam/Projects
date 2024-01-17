@@ -1,0 +1,175 @@
+.medicineCard {
+	width: 18vmax;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none !important;
+	margin: 1.5vmax;
+	margin-bottom: 2.5vmax;
+	transition: all 0.5s;
+	padding-bottom: 1vmax;
+	background-color: #e0f4ef;
+	border-radius: 15px;
+	min-height: 31vmax;
+}
+
+/* Image Style */
+.medicineCard img {
+	width: 18vmax;
+	height: 22vmax;
+	margin-bottom: 10px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+/* Rating, Number of rating Style */
+.medicineCard>div {
+	margin: 0vmax 0.5vmax 0.2vmax 1vmax;
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* Name Style */
+.medicineCard>p {
+	font-size: 1.8vmax;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	margin-bottom: 0.5vmax;
+	margin-left: 1.1vmax;
+	margin-right: 1.1vmax;
+	color: #5F7161;
+	font-weight: lighter;
+	word-wrap: break-word;
+}
+
+/* Price Style */
+.medicineCard>span {
+	font-size: 1.3vmax;
+	margin-left: 1.1vmax;
+	margin-top: 0;
+	margin-bottom: 8px;
+	margin-right: 0.7vmax;
+	color: #5F7161;
+	font-weight: 320;
+}
+
+.medicineCard>div>span {
+	font-size: 1.3vmax;
+	margin-left: 1.1vmax;
+	margin-top: 0;
+	margin-bottom: 8px;
+	margin-right: 0.7vmax;
+	color: #5F7161;
+	font-weight: 320;
+}
+
+.medicineCard .price {
+	font-size: 1.6vmax;
+	margin-left: 1.1vmax;
+	margin-top: 0;
+	margin-bottom: 8px;
+	margin-right: 0.7vmax;
+	color: #5F7161;
+	font-weight: 350;
+}
+
+@media all and (max-width: 975px) {
+
+	.medicineCard {
+		width: 20vmax;
+		margin-bottom: 5vmax;
+		min-height: 41vmax;
+		max-height: 41vmax;
+	}
+
+	/* Image */
+	.medicineCard img {
+		width: 20vmax;
+		height: 22vmax;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	/* Rating, Number of Review */
+	.medicineCard>div {
+		margin-left: 2.5vmax;
+		display: block;
+		margin-block: 0px;
+	}
+
+	/* Name */
+	.medicineCard>p {
+		font-size: 2.5vmax;
+		margin-left: 2.9vmax;
+		margin-right: 2.9vmax;
+		margin-bottom: 0.1vmax;
+	}
+
+	.medicineCard>span {
+		font-size: 2vmax;
+		margin-left: 2.5vmax;
+	}
+}
+
+@media (max-width: 800px) {
+	.medicineCard {
+		width: 28vmax;
+		margin-bottom: 2.5vmax;
+		border-radius: 10px;
+	}
+
+	.medicineCard img {
+		width: 28vmax;
+		height: 30vmax;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	/* Name */
+	.medicineCard>p {
+		font-size: 2.3vmax;
+		margin-left: 2.9vmax;
+		margin-right: 2.9vmax;
+		margin-bottom: 0.1vmax;
+	}
+
+	.medicineCard>span {
+		font-size: 2vmax;
+		margin-left: 2.5vmax;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.medicineCard {
+		width: 35vmax;
+		margin: 2.5vmax;
+		margin-bottom: 5vmax;
+		min-height: 50vmax;
+		max-height: 50vmax;
+	}
+
+	.medicineCard img {
+		width: 35vmax;
+		height: 38vmax;
+	}
+
+	/* Name */
+	.medicineCard>p {
+		font-size: 2.6vmax;
+		margin-left: 2.9vmax;
+		margin-right: 2.9vmax;
+		margin-bottom: 0.1vmax;
+	}
+
+	.medicineCard>span {
+		font-size: 2.2vmax;
+		margin-left: 2.5vmax;
+	}
+}
+
+/* Hover on Card Style */
+.medicineCard:hover {
+	box-shadow: 0 0 5px #0F1111;
+	transform: translateY(-1vmax);
+
+}

@@ -1,0 +1,123 @@
+/* All items container in the page. */
+.order-review-container {
+	width: 60%;
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	position: relative;
+}
+
+/* Width of the shipping information div. */
+.shipping-information-review {
+	width: 45%;
+}
+
+/* Second div to the right. */
+.order-summery {
+	position: absolute;
+	right: 0px;
+	width: 35%;
+}
+
+/* Information of shipping with background and border. */
+.all-shipping-info {
+	margin-top: 30px;
+	border: 1px solid #d0d0d0;
+	background-color: rgb(232, 240, 240);
+	border-radius: 10px;
+	padding: 18px;
+	font-family: '';
+}
+
+/* Information of order total with background and border. */
+.all-order-info {
+	margin-top: 30px;
+	border: 1px solid #d0d0d0;
+	background-color: rgb(232, 240, 240);
+	border-radius: 10px;
+	padding: 18px;
+	font-family: '';
+}
+
+/* Div contain information */
+.info {
+	padding: 5px;
+}
+
+/* Actual name and all information */
+.info h5:last-child {
+	font-family: 'Comic Neue', cursive;
+	text-align: right;
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+/* Div contain the subtotal of the cart. */
+.subtotal-confirm {
+	display: flex;
+	padding: 5px;
+}
+
+/* Total amount of the cart. */
+.subtotal-confirm span {
+	margin-left: auto;
+	margin-right: 0px;
+	font-family: 'Comic Neue', cursive;
+	font-size: 1.25rem;
+}
+
+/* Payment button style */
+.payment button {
+	background-color: rgb(203, 75, 39);
+	color: white;
+	width: 100%;
+	margin-top: 0.5vmax;
+	padding: 0.8vmax;
+	transition: all 0.5s;
+	border-radius: 10px;
+	font-family: 'Comic Neue', cursive;
+	box-shadow: none;
+	border: none;
+	font-size: 1.5vmax;
+}
+
+/* Payment button hover style */
+.payment button:hover {
+	background-color: rgb(156, 40, 40);
+}
+
+@media all and (max-width: 1100px) {
+	/* All items container in the page. */
+	.order-review-container {
+		width: 70%;
+		display: block;
+		position: relative;
+	}
+
+	/* Second div give 100% width. */
+	.order-summery {
+		width: 100%;
+		position: relative;
+		margin-top: 30px;
+	}
+
+	/* Width of the shipping information div. */
+	.shipping-information-review {
+		width: 100%;
+	}
+
+	/* Information of shipping with top margin. */
+	.all-shipping-info {
+		margin-top: 0px;
+	}
+
+	/* Information of order with top margin. */
+	.all-order-info {
+		margin-top: 0px;
+	}
+
+	/* size of button to proceed to payment. */
+	.payment button {
+		font-size: 2.3vmax;
+	}
+}

@@ -1,0 +1,80 @@
+/* Page Container */
+.success-container {
+	text-align: center;
+	padding: 40px 0;
+	font-family: "Comic Neue", cursive;
+}
+
+/* Success Heading */
+.success-container h1 {
+	color: #88B04B;
+	font-weight: 900;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+/* Order Confirmation Heading */
+.success-container p {
+	color: #404F5E;
+	font-size: 20px;
+	margin: 0;
+}
+
+/* Icons */
+.success-container i {
+	color: #9ABC66;
+	font-size: 100px;
+	line-height: 200px;
+	margin-left: -15px;
+}
+
+/* Card which contain everything written as well as image. */
+.card {
+	background: white;
+	padding: 60px;
+	border-radius: 4px;
+	box-shadow: 0 2px 3px #C8D0D8;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* Container of the button */
+.btn-container {
+	margin-top: 2vmax;
+}
+
+/* Button */
+.view-orders-btn {
+	background-color: #9ABC66;
+	padding: 1.1vmax;
+	font-size:1.5vmax;
+	border-radius: 5px;
+	text-decoration: none;
+	color: rgb(51, 0, 0);
+	transition: all 0.5s;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/* Button Hover */
+.view-orders-btn:hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(75, 105, 19);
+}
+
+@media all and (max-width: 1100px) {
+
+	/* Container of the button */
+	.btn-container {
+		margin-top: 4vmax;
+	}
+
+	/* Button */
+	.view-orders-btn {
+		margin: 0 auto;
+		font-size: 20px;
+	}
+}

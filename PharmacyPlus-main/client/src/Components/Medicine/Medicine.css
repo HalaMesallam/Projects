@@ -1,0 +1,372 @@
+/* Main Div to contain both carousel and Details */
+.specific-medicine {
+	width: 100%;
+	padding: 2vmax;
+	box-sizing: border-box;
+	display: flex;
+	background-color: rgb(241, 245, 246);
+	padding-bottom: 0vmax;
+	border: 1px solid #d0d0d0;
+	background-color: rgb(232, 240, 240);
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+/* Both Divs */
+.specific-medicine>div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2vmax;
+	box-sizing: border-box;
+}
+
+/* Carousel Width make 50% */
+.medicine-image {
+	width: 50%;
+	min-height: 350px;
+	border-radius: 20px;
+}
+
+.medicine-image1 img {
+	max-height: 450px;
+	min-height: 400px;
+	min-width: 400px;
+	max-width: 400px;
+}
+
+/* Not display small carousel images */
+.carousel .thumb {
+	display: none;
+}
+
+/* Start everything from start. */
+.specific-medicine>div:last-child {
+	align-items: flex-start;
+	padding-top: 0px;
+	margin-top: -20px;
+}
+
+/* Name */
+.product-name h2 {
+	color: #5F7161;
+	font-size: 1.9vmax;
+	margin-bottom: 0;
+	font-weight: 600;
+	word-break: break-word;
+}
+/* Name */
+.product-name h4 {
+	color: #5F7161;
+	font-size: 1.5vmax;
+	margin-bottom: 0;
+	font-weight: 200;
+	word-break: break-word;
+}
+
+/* ID */
+.product-name p {
+	color: #5F7161;
+	font-size: 1.2vmax;
+	font-weight: lighter;
+	word-wrap: break-word;
+}
+
+/* Product Review Below Name */
+.specific-product-reviews {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* Number of Reviews */
+.specific-product-reviews>span {
+	font-size: 1.2vmax;
+	margin: auto;
+	margin-left: 1vmax;
+	color: #5F7161;
+	font-weight: lighter;
+}
+
+/* Price */
+.price-quantity h1 {
+	font-size: 2.5vmax;
+	color: #5F7161;
+	font-weight: 500;
+	margin-top: 0.5vmax;
+	margin-bottom: 0px;
+}
+
+.price-quantity p {
+	margin-bottom: 0.5vmax;
+}
+
+/* Input */
+.specific-product-quantity>input {
+	border: none;
+	width: 3.5vmax;
+	text-align: center;
+	padding: 0.5vmax;
+	outline: none;
+	cursor: pointer;
+	height: 2.8vmax;
+	color: rgb(211, 144, 26);
+}
+
+/* Both + and - buttons */
+.specific-product-quantity>button {
+	border: none;
+	background-color: rgb(53, 52, 52);
+	color: white;
+	height: 2.8vmax;
+	width: 2.5vmax;
+	transition: all 0.5s;
+}
+
+/* First - button */
+.specific-product-quantity>button:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* Second + button */
+.specific-product-quantity>button:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.specific-product-quantity>button:hover {
+	background-color: rgb(27, 27, 27);
+}
+
+/* Create Margin of Input and Add to Cart Buttons from Price */
+.product-add-to-cart {
+	display: flex;
+	margin-top: 0.5vmax;
+}
+
+/* Add to Cart Button */
+.product-add-to-cart>button:last-child {
+	background-color: rgb(255, 106, 0);
+	color: white;
+	border: none;
+	border-radius: 50px;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding: 0.5vmax 2vmax;
+	outline: none;
+	margin-left: 4vmax;
+}
+
+.product-add-to-cart>button:last-child:hover {
+	background-color: rgb(204, 85, 0);
+}
+
+.product-add-to-cart>button:last-child:disabled {
+	background-color: rgb(190, 113, 59);
+	cursor: no-drop;
+}
+
+/* Description Inline */
+.specific-product-description p {
+	display: inline;
+	word-break: break-word;
+}
+
+/* Description */
+.specific-product-description p:first-child {
+	font-size: 1.4vmax;
+	font-weight: 500;
+	color: #5F7161;
+}
+
+/* Product Description */
+.specific-product-description p:last-child {
+	font-size: 1.3vmax;
+	color: #858585;
+}
+
+/* Submit Review Button */
+.submit-specific-product-review {
+	background-color: rgb(255, 132, 44);
+	color: white;
+	border: none;
+	border-radius: 50px;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding: 0.5vmax 1.5vmax;
+	outline: none;
+	margin-top: 2vmax;
+}
+
+.submit-specific-product-review:hover {
+	background-color: rgb(164, 68, 0);
+	transform: scale(1.1);
+}
+
+/* Popup window textarea */
+.text-area-and-button textarea {
+	font-family: "Comic Neue", cursive;
+	padding: 15px;
+	border-radius: 10px;
+	border: 1px solid #d0d0d0;
+	width: 100%;
+	font-size: 20px;
+}
+
+/* Buttons of submit or cancel review popup */
+#review-popup-button {
+	border: 2px solid rgb(31, 102, 56);
+	border-radius: 10px;
+	padding: 0.8vmax;
+	color: rgb(28, 133, 86);
+	float: right;
+	margin-right: 40px;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+
+.product-no-review {
+	margin-bottom: 50px;
+	font-size: 3vmax;
+}
+
+#review-popup-button:hover {
+	background-color: #d0d0d0;
+}
+
+#review-popup-button:active {
+	border: 3px solid rgb(31, 102, 56);
+}
+
+.green-color {
+	color: green;
+	font-weight: lighter;
+}
+
+.red-color {
+	color: red;
+	font-weight: lighter;
+}
+
+@media all and (max-width: 992px) {
+
+	/* Main Div to contain both carousel and Details */
+	/* Making Carousel and Details rows from flex */
+	.specific-medicine {
+		flex-direction: column;
+		padding: 4vmax;
+	}
+
+	/* Image Up */
+	.specific-medicine>div:first-child {
+		padding: 0px;
+	}
+
+	/* Aligning Details to Center */
+	.specific-medicine>div:last-child {
+		align-items: center;
+	}
+
+	/* Name Size */
+	.product-name h2 {
+		font-size: 3.4vmax;
+	}
+
+	/* ID Size */
+	.product-name p {
+		font-size: 1.3vmax;
+	}
+
+	/* Reviews in two rows */
+	.specific-product-reviews {
+		display: block;
+	}
+
+	/* Number of reviews Size */
+	.specific-product-reviews>span {
+		font-size: 1.9vmax;
+		margin: auto;
+	}
+
+	/* Price */
+	.price-quantity h1 {
+		font-size: 4vmax;
+		margin-left: -15px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	/* Input Height and Width */
+	.specific-product-quantity>input {
+		width: 4vmax;
+		height: 3.9vmax;
+	}
+
+	/* Buttons Height and Width */
+	.specific-product-quantity>button {
+		height: 3.9vmax;
+		width: 3.5vmax;
+	}
+
+	/* Add to Cart Button */
+	.product-add-to-cart>button:last-child {
+		height: 3.9vmax;
+		margin-left: 2.0vmax;
+	}
+
+	/* Maintain margin from Price of Cart and + - buttons */
+	.product-add-to-cart {
+		display: flex;
+		margin-top: 2vmax;
+	}
+
+	/* Centering Description */
+	.specific-product-description {
+		display: inline;
+		text-align: center;
+		margin-top: 1vmax;
+		width: 70%;
+	}
+
+	/* Description */
+	.specific-product-description p:first-child {
+		font-size: 2vmax;
+		color: #5F7161;
+	}
+
+	/* Product Description */
+	.specific-product-description p:last-child {
+		font-size: 2vmax;
+		word-wrap: break-word;
+	}
+
+	/* Submit Review Button */
+	.submit-specific-product-review {
+		background-color: rgb(255, 132, 44);
+		margin-top: 3vmax;
+		height: 4.3vmax;
+		margin-bottom: 0;
+		font-size: 2vmax;
+	}
+
+	.medicine-image {
+		width: 100%;
+		min-height: 100px;
+	}
+
+	/* Buttons of submit and cancel popup review */
+	#review-popup-button {
+		font-size: 15px;
+	}
+
+	.medicine-image1 img {
+		width: 100%;
+		min-height: 300px;
+		max-height: 300px;
+	}
+}

@@ -1,0 +1,165 @@
+.pharmacyCard {
+	width: 18vmax;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none !important;
+	margin: 1.5vmax;
+	margin-bottom: 2.5vmax;
+	transition: all 0.5s;
+	padding-bottom: 1vmax;
+	background-color: #e0f4ef;
+	border-radius: 15px;
+	min-height: 31vmax;
+}
+
+/* Image Style */
+.pharmacyCard img {
+	width: 18vmax;
+	height: 22vmax;
+	margin-bottom: 10px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+/* Rating, Number of rating Style */
+.pharmacyCard>div {
+	margin: 0vmax 0.5vmax 0.2vmax 1vmax;
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* Name Style */
+.pharmacyCard>p {
+	font-size: 1.8vmax;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	margin-bottom: 0.5vmax;
+	margin-left: 1.1vmax;
+	margin-right: 1.1vmax;
+	color: #5F7161;
+	font-weight: lighter;
+	word-wrap: break-word;
+}
+
+/* Price Style */
+.pharmacyCard>span {
+	font-size: 1.3vmax;
+	margin-left: 1.1vmax;
+	margin-top: 0;
+	margin-bottom: 8px;
+	margin-right: 0.5vmax;
+	color: #5F7161;
+	font-weight: 320;
+}
+
+.pharmacyCard>div>span {
+	font-size: 1.3vmax;
+	margin-left: 1.1vmax;
+	margin-top: 0;
+	margin-bottom: 8px;
+	margin-right: 0.5vmax;
+	color: #5F7161;
+	font-weight: 320;
+}
+
+@media all and (max-width: 975px) {
+
+	.pharmacyCard {
+		width: 20vmax;
+		margin-bottom: 5vmax;
+		min-height: 41vmax;
+		max-height: 41vmax;
+	}
+
+	/* Image */
+	.pharmacyCard img {
+		width: 20vmax;
+		height: 22vmax;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	/* Rating, Number of Review */
+	.pharmacyCard>div {
+		margin-left: 2.5vmax;
+		display: block;
+		margin-block: 0px;
+	}
+
+	/* Name */
+	.pharmacyCard>p {
+		font-size: 2.5vmax;
+		margin-left: 2.9vmax;
+		margin-right: 2.9vmax;
+		margin-bottom: 0.1vmax;
+	}
+
+	.pharmacyCard>span {
+		font-size: 2vmax;
+		margin-left: 2.5vmax;
+	}
+}
+
+@media (max-width: 800px) {
+	.pharmacyCard {
+		width: 28vmax;
+		margin-bottom: 2.5vmax;
+		border-radius: 10px;
+	}
+
+	.pharmacyCard img {
+		width: 28vmax;
+		height: 30vmax;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	/* Name */
+	.pharmacyCard>p {
+		font-size: 2.3vmax;
+		margin-left: 2.9vmax;
+		margin-right: 2.9vmax;
+		margin-bottom: 0.1vmax;
+	}
+
+	.pharmacyCard>span {
+		font-size: 2vmax;
+		margin-left: 2.5vmax;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.pharmacyCard {
+		width: 35vmax;
+		margin: 2.5vmax;
+		margin-bottom: 5vmax;
+		min-height: 50vmax;
+		max-height: 50vmax;
+	}
+
+	.pharmacyCard img {
+		width: 35vmax;
+		height: 38vmax;
+	}
+
+	/* Name */
+	.pharmacyCard>p {
+		font-size: 2.6vmax;
+		margin-left: 2.9vmax;
+		margin-right: 2.9vmax;
+		margin-bottom: 0.1vmax;
+	}
+
+	.pharmacyCard>span {
+		font-size: 2.2vmax;
+		margin-left: 2.5vmax;
+	}
+}
+
+/* Hover on Card Style */
+.pharmacyCard:hover {
+	box-shadow: 0 0 5px #0F1111;
+	transform: translateY(-1vmax);
+
+}

@@ -1,0 +1,139 @@
+/* Container of the Cart for width. */
+.cart-container {
+	width: 70%;
+	margin: auto;
+	margin-top: 3%;
+}
+
+/* Shows the total price and Checkout button. */
+.cart-total-price {
+	text-align: end;
+	margin-top: 2%;
+	font-family: 'Comic Neue', cursive;
+}
+
+/* Total Price */
+.cart-total-price span {
+	font-weight: bold;
+}
+
+/* Button to proceed to checkout. */
+.proceed-checkout {
+	background-color: rgb(255, 106, 0);
+	border: none;
+	border-radius: 5px;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding: 0.7vmax 3vmax;
+	outline: none;
+	font-size: 20px;
+	color: white;
+}
+
+/* Hover button to proceed to checkout. */
+.proceed-checkout:hover {
+	background-color: rgb(204, 85, 0);
+	color: white;
+}
+
+/* Style when button is disabled. */
+.proceed-checkout:disabled {
+	cursor: not-allowed;
+	background-color: rgb(170, 82, 19);
+}
+
+/* Link to view products and Text of No items in Cart. */
+.cart-empty {
+	font-size: 3vmax;
+	font-family: 'Comic Neue', cursive;
+}
+
+/* Button of viewing all the products of cart. */
+.view-product-btn {
+	background-color: rgb(165, 28, 65);
+	padding: 1.1vmax;
+	font-size:1.5vmax;
+	border-radius: 5px;
+	text-decoration: none;
+	color: rgb(213, 213, 213);
+	transition: all 0.5s;
+}
+
+/* Hover of View Products button. */
+.view-product-btn:hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(235, 75, 75);
+}
+
+@media all and (max-width: 768px) {
+	/* Container of the Cart for width. */
+	.cart-container {
+		width: 85%;
+	}
+
+	/* Button to proceed to checkout. */
+	.proceed-checkout {
+		font-size: 18px;
+	}
+}
+
+/* Container of the cartItems for display and border, padding */
+.cart-item-card-container {
+	border: 0.5px solid rgb(202, 202, 202);
+	border-radius: 5px;
+	padding: 1vmax;
+	display: flex;
+	margin-bottom: 1.5vmax;
+	background-color: rgb(232, 240, 240);
+}
+
+/* Image of product in Cart */
+.cart-item-card-container img {
+	width: 20vmax;
+	height: 18vmax;
+	border-radius: 5px;
+}
+
+/* Contain every information and new class to make information side with image. */
+.cart-item-card-info {
+	padding: 20px;
+	font-family: 'Comic Neue', cursive;
+	padding-bottom: 5px
+}
+
+/* Price of the product */
+.cart-item-card-info h1 {
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+
+/* Remove item from cart link */
+.cart-item-card-info p {
+	color: rgb(175, 107, 52);
+	cursor: pointer;
+}
+
+/* Name of the product */
+.cart-item-card-info h4 {
+	color: black;
+	text-decoration: none;
+	word-break: break-word;
+}
+
+/* When hover over name and image. */
+.cart-item-card-info a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+@media all and (max-width: 992px) {
+	/* Container of the cartItem. */
+	.cart-item-card-container {
+		margin-bottom: 3vmax;
+	}
+
+	.cart-item-card-container img {
+		height: 23vmax;
+	}
+}

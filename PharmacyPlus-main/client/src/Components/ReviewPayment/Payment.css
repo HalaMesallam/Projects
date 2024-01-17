@@ -1,0 +1,142 @@
+/* form which contain everything, making it to center of the page. */
+.card-info-form {
+	width: 30%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/* Heading of the page. */
+.card-info-form > h2 {
+	margin-bottom: 30px;
+}
+
+/* container which contain everything except heading, giving it border and padding */
+.card-info-container {
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	margin-top: 7%;
+	padding: 5%;
+	border-radius: 10px;
+	background-color: rgb(232, 240, 240);
+	width: 80%;
+}
+
+/* Icons in the box of input. */
+.card-info-container > div > svg {
+	position: absolute;
+	transform: translateX(1vmax);
+	font-size: 1.6vmax;
+	margin-top: 0.7%;
+	color: rgba(0, 0, 0, 0.547)
+}
+
+/* Input box with padding and border. */
+.card-details {
+	padding: 0.8vmax 4vmax;
+	padding-right: 2vmax;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	width: 80%;
+	margin-bottom: 10%;
+}
+
+/* Button to pay */
+.card-info-form button {
+	background-color: rgb(203, 75, 39);
+	color: white;
+	width: 100%;
+	padding: 0.8vmax;
+	transition: all 0.5s;
+	border-radius: 10px;
+	font-family: 'Comic Neue', cursive;
+	box-shadow: none;
+	border: none;
+	font-size: 1.5vmax;
+}
+
+.card-info-form input {
+	padding: 0.5vmax 4vmax;
+	padding-right: 2vmax;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	transition: 0.5s;
+	font-family: 'Comic Neue', cursive;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/* When click on input border color change. */
+.card-info-form input:focus {
+	border: 1px solid rgb(194, 93, 38);
+}
+
+/* button to pay hover style */
+.card-info-form button:hover {
+	background-color: rgb(156, 40, 40);
+}
+
+@media all and (max-width: 1285px) {
+	/* form which contain everything, making it to center of the page. */
+	.card-info-form {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 992px) {
+	/* Icons in the box of input. */
+	.card-info-container > div > svg {
+		margin-top: 1.2%;
+	}
+}
+
+@media all and (max-width: 750px) {
+	/* form which contain everything, making it to center of the page. */
+	.card-info-form {
+		width: 80%;
+	}
+
+	/* Input box with padding and border. */
+	.card-details {
+		padding: 1.5vmax 7vmax;
+	}
+
+	/* Icons in the box of input. */
+	.card-info-container > div > svg {
+		margin-top: 1.5%;
+		font-size: 3vmax;
+	}
+
+	/* Button to pay font-size */
+	.card-info-form button {
+		padding: 1vmax;
+		font-size: 3vmax;
+	}
+}
+
+@media all and (max-width: 500px) {
+
+	/* Heading of the page font-size */
+	.card-info-form > h2 {
+		font-size: 4vmax;
+	}
+
+	/* Icons in the box of input. */
+	.card-info-container > div > svg {
+		margin-top: 2%;
+		font-size: 3vmax;
+	}
+
+	/* Input box with padding and border. */
+	.card-details {
+		padding: 1.5vmax 7vmax;
+		padding-right: 10px;
+	}
+
+	/* container which contain everything except heading, giving it border and padding */
+	.card-info-container {
+		width: 100%;
+	}
+}

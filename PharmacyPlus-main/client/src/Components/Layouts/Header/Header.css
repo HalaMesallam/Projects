@@ -1,0 +1,177 @@
+::placeholder {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* NavBar general styles */
+.navBar {
+	position: relative;
+	width: 100%;
+	margin-bottom: 10vmax;
+	letter-spacing: 1.2px;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	z-index: 1;
+	background-color: #0F1111;
+}
+
+/* Logo and Search Style. */
+.logo-nav {
+	width: 100px;
+	height: 65px;
+	margin-left: 10px;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+.logo-nav:hover {
+	border: 1px solid #d0d0d0;
+}
+
+.search-nav {
+	margin-left: 50px;
+}
+
+.search-field-nav {
+	position: relative;
+	margin-right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: none;
+	padding: 19px;
+	width: 395px;
+	height: 25px;
+}
+
+.search-btn-nav {
+	margin-left: -1px;
+	height: 38px;
+	margin-bottom: 5px;
+	border: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+@media all and (max-width: 1106px) {
+	.navBar {
+		margin-bottom: 113px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	/* NavBar style with media. */
+	.navBar {
+		position: 'none';
+		width: '100%';
+		margin-bottom: 89px;
+	}
+
+	.search-field-nav {
+		position: relative;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border: none;
+		padding: 20px;
+		width: 80%;
+		height: 25px;
+		margin: 25px 0 15px 0;
+	}
+
+	.search-btn-nav {
+		margin-left: -1px;
+		height: 40px;
+		margin-bottom: 5px;
+		border: none;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	/* NavBar three buttons style with media. */
+	.sign-in-nav {
+		font-size: 20px;
+		margin-left: 40px;
+	}
+
+	.register-nav {
+		font-size: 15px;
+		margin-left: 50px;
+	}
+
+	.order-nav {
+		padding-left: 45px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		font-size: 20px;
+	}
+
+	.cart-nav {
+		padding-left: 44px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 810px) {
+	.navBar {
+		margin-bottom: 85px;
+	}
+}
+
+
+@media all and (max-width: 350px) {
+	.navBar {
+		margin-bottom: 80px;
+	}
+}
+
+/* NavBar three button styles. */
+.sign-in-nav {
+	font-size: 18px;
+	color: #d0d0d0;
+}
+
+.sign-in-nav > span {
+	color: #d0d0d0;
+}
+
+.sign-in-nav > span > span > span {
+	font-size: 15px;
+}
+
+.register-nav {
+	font-size: 15px;
+	color: #d0d0d0;
+
+}
+
+.sign-nav {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.order-nav {
+	margin: 12px 2px 8px 2px;
+	font-size: 20px;
+	color: #d0d0d0;
+
+}
+
+.cart-nav {
+	margin: 12px 4px 0 3px;
+	font-size: 20px;
+	color: #d0d0d0;
+
+}
+
+/* Add Border when hover an item. */
+.nav-item:hover {
+	border: 1px solid #d0d0d0;
+}

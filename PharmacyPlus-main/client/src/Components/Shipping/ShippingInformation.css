@@ -1,0 +1,113 @@
+/* Container of everything in shipping info page. */
+.Shipping-info-width {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+/* Form style of border margin and padding. */
+.shipping-info {
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	margin-top: 7%;
+	padding: 5%;
+	border-radius: 10px;
+	background-color: rgb(232, 240, 240)
+}
+
+/* Input, option and select button style. */
+.shipping-info input {
+	padding: 0.5vmax 4vmax;
+	padding-right: 2vmax;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	transition: 0.5s;
+	font-family: 'Comic Neue', cursive;
+	width: 50%;
+}
+
+/* When click on input border color change. */
+.shipping-info input:focus {
+	border: 1px solid rgb(194, 93, 38);
+}
+
+/* Every heading in shipping info. */
+.shipping-info h5 {
+	font-family: 'Comic Neue', cursive;
+	margin-top: 1.5vmax;
+	margin-bottom: 0.3vmax;
+}
+
+/* Getting Icons inside of Input box. */
+.shipping-info svg {
+	position: absolute;
+	transform: translateX(1vmax);
+	font-size: 1.6vmax;
+	margin-top: 0.65vmax;
+	color: rgba(0, 0, 0, 0.547)
+}
+
+/* Continue button style */
+.submit-button-shipping-info button {
+	background-color: rgb(203, 75, 39);
+	color: white;
+	width: 40%;
+	margin-top: 2.5vmax;
+	padding: 0.8vmax;
+	transition: all 0.5s;
+	border-radius: 10px;
+	font-family: 'Comic Neue', cursive;
+	box-shadow: none;
+	border: none;
+	font-size: 1.5vmax;
+}
+
+/* Continue button hover style */
+.submit-button-shipping-info button:hover {
+	background-color: rgb(156, 40, 40);
+}
+
+@media all and (max-width: 992px) {
+	/* Container of everything in shipping info page. */
+	.Shipping-info-width {
+		width: 70%;
+	}
+
+	/* Input, option and select button style. */
+	.shipping-info input {
+		width: 45%;
+		padding: 1vmax 4vmax;
+		font-size: 2vmax;
+	}
+
+	/* Continue button style */
+	.submit-button-shipping-info button {
+		width: 80%;
+		padding: 1.5vmax;
+	}
+
+	/* Getting Icons inside of Input box adjusting. */
+	.shipping-info svg {
+		margin-top: 1vmax;
+	}
+}
+
+@media all and (max-width: 500px) {
+
+	/* Changing the width of all input, select and option. */
+	.shipping-info input {
+		width: 70%;
+	}
+
+	/* Continue button width. */
+	.submit-button-shipping-info button {
+		width: 80%;
+		margin-top: 5vmax;
+	}
+
+	/* Getting Icons inside of Input box adjusting. */
+	.shipping-info svg {
+		margin-top: 1.3vmax;
+	}
+}

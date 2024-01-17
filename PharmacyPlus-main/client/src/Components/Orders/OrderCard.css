@@ -1,0 +1,210 @@
+/* OrderItemCard component CSS */
+
+/* Contain everything about each order. */
+/* Border width and position, bottom margin */
+.order-container-info {
+	border: 1px solid #d0d0d0;
+	border-radius: 10px;
+	width: 70%;
+	position: relative;
+	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Separate order top and bottom part with different background. */
+.order-detail-container {
+	background-color: #e2e2e2;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: none;
+	height: auto;
+}
+
+/* Display flex of order first three div and order # div */
+.order-information {
+	display: flex;
+}
+
+.order-information>div:first-child {
+	display: flex;
+}
+
+/* Heading of each info such as ORDER PLACED, TOTAL, SHIP TO */
+.order-info p:first-child {
+	color: #7b7b7b;
+	font-family: "Comic Neue", cursive;
+	margin: 10px 0px 0px 20px;
+}
+
+/* Contain information of header. */
+.order-info p:last-child {
+	color: #464646;
+	font-family: "Comic Neue", cursive;
+	margin-left: 20px;
+}
+
+/* Order Number position absolute to make it right align */
+.order-number {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+/* Order number color and margin */
+.order-number p {
+	color: #7b7b7b;
+	font-family: "Comic Neue", cursive;
+	margin: 0px;
+}
+
+/* View Order Detail */
+.order-number a {
+	color: #785252;
+	font-family: "Comic Neue", cursive;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+/* View Order Detail Hover */
+.order-number a:hover {
+	text-decoration: none;
+	color: rgb(57, 18, 18);
+}
+
+/* Contain particular order product background color */
+.order-items-container {
+	background-color: #e2ecea;
+}
+
+/* OrderItemInfoCard.js CSS */
+/* Each Item in order div style with display flex to show image and info side by side */
+.order-product-info {
+	display: flex;
+	padding: 5px;
+}
+
+/* Image width and radius with margin */
+.order-product-info img {
+	width: 21vmax;
+	height: 18vmax;
+	border-radius: 10px;
+	margin: 30px 0px 10px 30px;
+}
+
+/* Product information side by image. */
+.order-item-info {
+	padding: 50px;
+	font-family: 'Comic Neue', cursive;
+	padding-bottom: 5px;
+}
+
+/* Price of the product. */
+.order-item-info h1 {
+	font-weight: bold;
+	letter-spacing: 0px;
+	margin-bottom: 0px;
+}
+
+/* Name of the product */
+.order-item-info h4 {
+	color: black;
+	text-decoration: none;
+	word-break: break-word;
+}
+
+/* When hover over name and image. */
+.order-item-info a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/* Button to buy product again with style */
+.buy-product-again {
+	background-color: rgb(255, 132, 44);
+	color: white;
+	border: none;
+	border-radius: 30px;
+	transition: all 0.5s;
+	padding: 0.5vmax 1.5vmax;
+}
+
+/* Hover style of buy again button */
+.buy-product-again:hover {
+	background-color: rgb(164, 68, 0);
+	transform: scale(1.1);
+}
+
+@media all and (max-width: 1120px) {
+
+	/* Order Number position relative to make it below headings */
+	.order-number {
+		position: relative;
+		margin-left: 20px;
+		margin-top: 10px;
+		top: 0;
+		right: 0;
+	}
+
+	/* Display flex of order first three div and order # div */
+	.order-information {
+		display: block;
+	}
+
+	.order-information > div:first-child {
+		width: 100%;
+	}
+
+	/* Show order info after image. */
+	.order-container-info {
+		position: relative;
+	}
+
+	/* Separate order top and bottom part with different background. */
+	.order-detail-container {
+		padding-bottom: 20px;
+	}
+
+	.order-info {
+		margin-top: 10px;
+		margin-right: 5px;
+	}
+
+	/* Contain information of header. */
+	.order-info p:last-child {
+		margin-bottom: 0px;
+	}
+
+	/* OrderItemInfoCard.js CSS */
+	/* Image margin */
+	.order-product-info img {
+		margin: 10px 0px 10px 10px;
+	}
+
+	/* Product information padding. */
+	.order-item-info {
+		padding: 10px;
+		padding-top: 20px;
+	}
+
+	/* Price of the product size. */
+	.order-item-info h1 {
+		font-size: 3vmax;
+	}
+
+	/* Name of the product size. */
+	.order-item-info h4 {
+		font-size: 2.4vmax;
+	}
+
+	/* Quantity of product in order */
+	.order-item-info p {
+		font-size: 1.2vmax;
+		margin-bottom: 10px;
+	}
+
+	.order-product-info img {
+		height: 24vmax;
+	}
+}

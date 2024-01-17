@@ -1,0 +1,209 @@
+/* Contain div and button to change order status. 
+	Align Item Center and width 100%
+*/
+.orderStatus-update>div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+/* Select input style width of 80% */
+.css-b62m3t-container {
+	width: 80%;
+	margin-top: 10px;
+}
+
+/* Update Status button style */
+.orderStatus-update button:last-child {
+	border-radius: 4px;
+	font-family: "Comic Neue", cursive;
+	outline: none;
+	padding: 0.5vmax 2vmax;
+	background-color: #983820;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: 0.5s;
+}
+
+/* Update Button hover style */
+.orderStatus-update button:last-child:hover {
+	background-color: #b04b2b;
+}
+
+/* Update Button disabled style */
+.orderStatus-update button:disabled {
+	background-color: #6d4438;
+	color: white;
+	cursor: not-allowed;
+}
+
+@media all and (max-width: 992px) {
+
+	/* Contain div and button to change order status. */
+	.orderStatus-update>div {
+		margin-top: 12px;
+		width: 70%;
+	}
+
+	/* Update Status button style -- width and padding. */
+	.orderStatus-update button:last-child {
+		width: 70%;
+		padding: 0.8vmax 2vmax;
+	}
+}
+
+
+/* Container for the page of specific Order for width. */
+.specific-order-container {
+	width: 70%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/* Order Number display flex to be in one line, */
+.order-detail-number {
+	display: flex;
+	font-family: "Comic Neue", cursive;
+}
+
+/* Space left for div of order # */
+.order-detail-number>div:last-child {
+	margin-left: 8px;
+}
+
+/* Give top margin of box with border */
+.specific-order-detail-page {
+	margin: 30px 0px;
+	background-color: #f6f6f6;
+}
+
+/* Making shipping detail and order summery side-by-side */
+.order-details {
+	display: flex;
+	border: 1px solid #d0d0d0;
+	border-radius: 10px;
+	padding: 30px;
+	padding-bottom: 20px;
+	position: relative;
+	min-height: 240px;
+}
+
+/* Order details summery to right with 30px margin. */
+.order-detail-summery {
+	position: absolute;
+	right: 30px;
+}
+
+/* Reduce space between p and font-family */
+.order-detail-summery p {
+	margin-bottom: 0px;
+	font-family: "Comic Neue", cursive;
+}
+
+/* Heading of order details */
+.order-detail-summery p:first-child {
+	margin-bottom: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
+}
+
+/* Total to the right.. */
+.order-detail-summery span {
+	float: right;
+	margin-left: 50px;
+}
+
+/* Shipping information width */
+.order-shipping-info {
+	width: 30%;
+}
+
+/* Reduce space between p and font-family. */
+.order-shipping-info p {
+	margin-bottom: 0px;
+	font-family: "Comic Neue", cursive;
+}
+
+/* Heading of shipping information */
+.order-shipping-info p:first-child {
+	margin-bottom: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
+}
+
+/* Order Status */
+.order-status-info {
+	width: 30%;
+}
+
+/* Reduce space between p and font-family. */
+.order-status-info p {
+	margin-bottom: 0px;
+	font-family: "Comic Neue", cursive;
+}
+
+/* Heading of Order information */
+.order-status-info p:first-child {
+	margin-bottom: 5px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
+}
+
+.specific-order-items {
+	background-color: #e2e2e2;
+	border: none;
+	border-radius: 10px;
+}
+
+@media all and (max-width: 992px) {
+
+	/* Container for the page of specific Order for width. */
+	.specific-order-container {
+		width: 80%;
+	}
+
+	/* Making shipping detail and order summery horizontal */
+	.order-details {
+		display: block;
+	}
+
+	/* shipping information width to 100% */
+	.order-shipping-info {
+		width: 100%;
+	}
+
+	/* Order status width and top margin. */
+	.order-status-info {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	/* Order detail to the left horizontal with width 100% */
+	.order-detail-summery {
+		position: relative;
+		margin-left: 30px;
+		margin-top: 20px;
+	}
+
+	/* Order number to horizontal... */
+	.order-detail-number {
+		display: block;
+	}
+
+	/* Space left for div of order # */
+	.order-detail-number>div:last-child {
+		margin-left: 0px;
+	}
+
+	/* Heading of order details with margin-bottom reduce */
+	.order-detail-summery p:first-child {
+		margin-bottom: 5px;
+	}
+
+	/* Heading of shipping information with margin-bottom reduce */
+	.order-shipping-info p:first-child {
+		margin-bottom: 5px;
+	}
+}

@@ -1,0 +1,152 @@
+/* Container of everything in creating product page. */
+.new-product-container {
+	width: 50%;
+	margin: auto;
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	border-radius: 10px;
+	padding: 5%;
+	margin-top: 5%;
+	background-color: rgb(232, 240, 240);
+}
+
+/* Input, textarea button style. */
+.product-create-form input,
+.product-create-form textarea {
+	padding: 0.5vmax 4vmax;
+	padding-right: 2vmax;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid rgba(95, 113, 97, 0.4);
+	transition: 0.5s;
+	font-family: 'Comic Neue', cursive;
+	width: 60%;
+}
+
+
+/* When click on input border color change. */
+.product-create-form input:focus {
+	border: 1px solid rgb(194, 93, 38);
+}
+
+/* Every heading in creating product page. */
+.product-create-form h5 {
+	font-family: 'Comic Neue', cursive;
+	margin-top: 1.5vmax;
+	margin-bottom: 0.3vmax;
+}
+
+/* Giving margin between two div */
+.product-create-form div {
+	margin: 3%;
+}
+
+/* Getting Icons inside of Input box. */
+.product-create-form svg {
+	position: absolute;
+	transform: translateX(1vmax);
+	font-size: 1.6vmax;
+	margin-top: 0.65vmax;
+	color: rgba(0, 0, 0, 0.547)
+}
+
+/* Create Product button style */
+.product-create-form button {
+	background-color: rgb(203, 75, 39);
+	color: white;
+	width: 70%;
+	margin-top: 2.5vmax;
+	padding: 0.8vmax;
+	transition: all 0.5s;
+	border-radius: 10px;
+	font-family: 'Comic Neue', cursive;
+	box-shadow: none;
+	border: none;
+	font-size: 1.5vmax;
+}
+
+/* Create Product button hover style */
+.new-product-container button:hover {
+	background-color: rgb(194, 93, 38);
+}
+
+/* width of inputting image */
+.product-image input {
+	width: 60%;
+}
+
+/* Preview Order side by side and if it more than size then overflow */
+.product-image-preview>div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	overflow: auto;
+}
+
+/* Preview Image width and height */
+.product-create-form img {
+	width: 30%;
+	border-radius: 10px;
+	margin-right: 5%;
+	min-height: 150px;
+	max-height: 300px;
+}
+
+@media all and (max-width: 992px) {
+
+	/* Container of everything in creating product page width. */
+	.new-product-container {
+		width: 70%;
+	}
+
+	/* Input, textarea button style. */
+	.product-create-form input,
+	.product-create-form textarea {
+		width: 80%;
+		padding: 1vmax 4vmax;
+		font-size: 2vmax;
+	}
+
+	/* Create Product button style width*/
+	.product-create-form button {
+		width: 100%;
+		padding: 1.5vmax;
+	}
+
+	/* Getting Icons inside of Input box. */
+	.product-create-form svg {
+		margin-top: 1vmax;
+	}
+
+	/* Preview Image width and height */
+	.product-create-form img {
+		min-height: 100px;
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 500px) {
+
+	/* Input, textarea button style. */
+	.product-create-form input,
+	.product-create-form textarea {
+		width: 90%;
+	}
+
+		/* Create Product button style width*/
+	.product-create-form button {
+		width: 100%;
+		margin-top: 5vmax;
+	}
+
+	/* Getting Icons inside of Input box. */
+	.product-create-form svg {
+		margin-top: 1.3vmax;
+	}
+
+	/* Preview Image width and height */
+	.product-create-form img {
+		min-height: 100px;
+		width: 50%;
+	}
+}
